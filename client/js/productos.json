@@ -7,7 +7,7 @@
             "nombre": "Audifonos",
             "id": "electronico"
         },
-        "precio": 1000,
+        "precio": 500,
         "color": {
             "color1": "azul",
             "color2": "negro"
