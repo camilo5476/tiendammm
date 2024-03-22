@@ -294,7 +294,7 @@ function drawkp(e) {
     
     
                 };
-                const response = await fetch("http://localhost:3000/pago", {
+                const response = await fetch("https://tiendammm-3.onrender.com/", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
