@@ -1,0 +1,187 @@
+.caja-individual{
+    width: 75%;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+
+}
+
+#image{
+    position: relative;
+    width: 30%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+#image img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    
+}
+
+.adelante{
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+
+.atras{
+    position: absolute;
+    top: 50%;
+}
+
+
+.producto-detalles2{
+    position: relative;
+    width: 30%;
+    height: 78%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.info{
+    height: 70%;
+    background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    
+    align-items: end;
+
+}
+
+.descripciones{
+    position: absolute;
+    border: 1px solid red;
+    top: 20px;
+    left: 60px;
+}
+
+
+
+.botones{
+    height: 30%;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.botones button{
+    width: 70%;
+    height: 40px;
+
+}
+
+.tallas-calzado{
+    display: none;
+    position: relative;
+    border: 1px solid red;
+    width: 40%;
+    height: 12%;
+    justify-content: start;
+    align-items: end;
+    flex-direction: row;
+    gap: 20px;
+    left: 57px;
+}
+
+.tallas-calzado button{
+    border-radius: 100px;
+    width: 50px;
+}
+
+.cantidades{
+    border: 1px solid red;
+    width: 40%;
+    height: 12%;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    flex-direction: row;
+    gap: 20px;
+}
+.precio23{
+    border: 1px solid red;
+    position: absolute;
+    width: 100px;
+    bottom: 300px;
+    
+
+}
+
+.cantidades button{
+    width: 30px;
+    height: 25px;
+    border-radius: 500px;
+}
+
+/* Media Query para 1400px */
+@media (max-width: 1400px) {
+    .caja-individual {
+        width: 600px;
+        margin-left: 50px;
+        display: flex;
+        align-items: center;
+
+    }
+    #image {
+        width: 50%;
+        height: 60%;
+    }
+    .producto-detalles2 {
+        width: 50%;
+        height: 60%;
+    }
+}
+
+@media (max-width: 900px) {
+    .caja-individual {
+        position: relative;
+        width: 550px;
+        display: flex;
+        align-items: center;
+        right: 350px;
+
+    }
+    #image {
+        width: 50%;
+        height: 60%;
+    }
+    .producto-detalles2 {
+        width: 50%;
+        height: 60%;
+    }
+}
+
+@media (max-width: 600px) {
+    .caja-individual {
+        position: relative;
+        width: 500px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        right: 350px;
+        top: 100px;
+
+    }
+    #image {
+        width: 60%;
+        height: 60%;
+    }
+    .producto-detalles2 {
+        width: 60%;
+        height: 60%;
+    }
+}
+

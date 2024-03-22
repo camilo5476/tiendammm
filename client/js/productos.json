@@ -1,0 +1,106 @@
+[
+    {
+        "id": "Audifonos-01",
+        "titulo": "Audifonos 01",
+        "imagen": ["./images/audifonos/1.jpg","./images/audifonos/1.1.jpg","./images/audifonos/1.2.jpg"],
+        "categoria": {
+            "nombre": "Audifonos",
+            "id": "electronico"
+        },
+        "precio": 1000,
+        "color": {
+            "color1": "azul",
+            "color2": "negro"
+        },
+        "info" : "",
+        "numerodecantidades": 2 
+    },
+
+    {
+        "id": "zandalias-01",
+        "titulo": "zandalias 01",
+        "imagen": ["./images/zandalias/2.jpg","./images/zandalias/2.1.jpg","./images/zandalias/2.2.jpg"],
+        "categoria": {
+            "nombre": "zandalias",
+            "id": "calzado"
+        },
+        "precio": 1000,
+        "color": {
+            "color1": "azul",
+            "color2": "negro"
+        },
+        "info" : "",
+        "numerodecantidades": 2 
+    },
+    {
+        "id": "zapatillas-01",
+        "titulo": "zapatillas 01",
+        "imagen": ["./images/zapatillas/1.jpg","./images/zapatillas/1.1.jpg"],
+        "categoria": {
+            "nombre": "zapatillas",
+            "id": "calzado"
+        },
+        "precio": 1000,
+        "color": {
+            "color1": "azul",
+            "color2": "negro"
+        },
+        "info" : "",
+        "numerodecantidades": 2 
+    },
+
+    {
+        "id": "zapatillas-02",
+        "titulo": "zapatillas 02",
+        "imagen":["./images/zapatillas/2.jpg","./images/zapatillas/2.1.jpg"],
+        "categoria": {
+            "nombre": "zapatillas",
+            "id": "calzado"
+        },
+        "precio": 1000,
+        "color": {
+            "color1": "azul",
+            "color2": "negro"
+        },
+        "info" : "",
+        "numerodecantidades": 2 
+    },
+
+    {
+        "id": "zapatillas-03",
+        "titulo": "zapatillas 03",
+        "imagen":["./images/zapatillas/3.jpg","./images/zapatillas/3.1.jpg"],
+        "categoria": {
+            "nombre": "zapatillas",
+            "id": "calzado"
+        },
+        "precio": 1000,
+        "color": {
+            "color1": "azul",
+            "color2": "negro"
+        },
+        "info" : "",
+        "numerodecantidades": 2 
+    },
+    {
+        "id": "zapatillas-04",
+        "titulo": "zapatillas 04",
+        "imagen":["./images/zapatillas/4.jpg","./images/zapatillas/4.1.jpg","./images/zapatillas/4.2.jpg" ],
+        "categoria": {
+            "nombre": "zapatillas",
+            "id": "calzado"
+        },
+        "precio": 1000,
+        "color": {
+            "color1": "azul",
+            "color2": "negro"
+        },
+        "info" : "",
+        "numerodecantidades": 2 
+    }
+
+
+
+    
+   
+]
