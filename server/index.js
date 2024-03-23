@@ -18,6 +18,7 @@ app.get("/", (req, res) => {
 });
 
 app.post("/pay", async (req, res) => {
+    console.log(req.body.title,Number(req.body.quantity,  Number(req.body.price)) )
     try {
         const body = {
             items: [{
