@@ -1,4 +1,6 @@
-const mp = new MercadoPago('APP_USR-7cab50a3-dfe7-41a0-9b33-627b7f0c724f' ,{
+import routes from "./routes.js";
+
+const mp = new MercadoPago(routes.API_KEY ,{
     locale: "es-AR"
 });
 
@@ -294,7 +296,7 @@ function drawkp(e) {
     
     
                 };
-                const response = await fetch("https://tiendammm-3.onrender.com/pago", {
+                const response = await fetch("https://tiendammm-3.onrender.com/pay", {
                     method: "POST",
                     headers: {
                         "Content-Type": "application/json",
@@ -328,11 +330,6 @@ const createCheckoutButton = (id) => {
         mp.bricks().create("wallet", "wallet_container", {
             initialization: {
                 preferenceId: id,
-            },
-            customization: {
-                texts: {
-                    valueProp: 'smart_option',
-                },
             },
         });
 

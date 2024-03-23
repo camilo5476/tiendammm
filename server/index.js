@@ -1,12 +1,11 @@
 import express from "express";
 import cors from "cors";
 
-
 // SDK de Mercado Pago
-import { MercadoPagoConfig, Preference} from 'mercadopago';
-// Agrega credenciales
-const client = new MercadoPagoConfig({ accessToken:'APP_USR-3712487128255922-032209-a82b6270579e767b9340f979d39f3c29-1736729703'});
+import { MercadoPagoConfig, Preference } from 'mercadopago';
 
+// Agrega credenciales
+const client = new MercadoPagoConfig({ accessToken:'TEST-3068369922515206-032120-f0e6cad42d8b1f4729ac7a5177e33abf-1736729703'});
 
 const app = express()
 const port = 3000;
@@ -16,10 +15,9 @@ app.use(express.json())
 
 app.get("/", (req, res) => {
     res.send("soy el server: ");
-
 });
 
-app.post("/pago", async (req, res) => {
+app.post("/pay", async (req, res) => {
     try {
         const body = {
             items: [{
@@ -30,18 +28,19 @@ app.post("/pago", async (req, res) => {
                 currency_id: "COP",
             }],
             back_urls: {
-                success: "http://www.youtube.com/@johangarzon9582",
-                failure: "http://www.youtube.com/@johangarzon9582",
-                pending: "http://www.youtube.com/@johangarzon9582"
+                success: "https://65fdad39fb849b29e8c12718--merry-naiad-e180d4.netlify.app/",
+                failure: "https://65fdad53c1de1f230414c9b7--bucolic-bonbon-2beec3.netlify.app/",
             },
-            auto_retun: "approved",
+            auto_return: "approved", // Cambié "auto_retun" a "auto_return"
         };
+
         const preference = new Preference(client)
         const result = await preference.create({ body })
 
         res.json({
             id: result.id
-        })
+        });
+
         console.log(result, "444444444444")
     } catch (error) {
         console.log(error);
@@ -49,15 +48,8 @@ app.post("/pago", async (req, res) => {
             error: "Error al crear la preferencia" 
         });
     }
-})
-
-
-
-// Maneja los webhooks de Mercado Pago
-
-
-
+});
 
 app.listen(port, () => {
-    console.log(`el servidor esta corriendo en el puerto ${port}`)
-})
+    console.log(`El servidor está corriendo en el puerto ${port}`);
+});
