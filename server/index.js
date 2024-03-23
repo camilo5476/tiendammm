@@ -35,7 +35,7 @@ app.post("/pay", async (req, res) => {
         };
 
         const preference = new Preference(client)
-        const result = await preference.create({ body })
+        const result = await preference.create(body)
 
         res.json({
             id: result.id
