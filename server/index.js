@@ -5,7 +5,7 @@ import cors from "cors";
 import { MercadoPagoConfig, Preference } from 'mercadopago';
 
 // Agrega credenciales
-const client = new MercadoPagoConfig({ accessToken:'TEST-3068369922515206-032120-f0e6cad42d8b1f4729ac7a5177e33abf-1736729703'});
+const client = new MercadoPagoConfig({ accessToken:'APP_USR-3068369922515206-032120-1f90a6e6e37992b830dd37a35d475636-1736729703'});
 
 const app = express()
 const port = 3000;

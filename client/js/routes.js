@@ -1,3 +1,3 @@
 export default {
-    API_KEY : "TEST-4567a895-2654-4602-8b16-95304e16b215"
+    API_KEY : "APP_USR-dd86ed69-dec6-4914-a177-4541717c9485"
 }
